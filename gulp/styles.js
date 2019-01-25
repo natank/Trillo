@@ -12,7 +12,7 @@ postcssPresetEnv({
 })
 
 
-gulp.task('styles', function () {
+export default gulp.task('styles', function () {
     var plugins = [
         postcssPresetEnv,
     ];
