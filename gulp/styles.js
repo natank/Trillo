@@ -1,20 +1,17 @@
-const postcss = require('gulp-postcss'),
-      postcssPresetEnv = require('postcss-preset-env'),
-      gulp = require('gulp');
-
-postcssPresetEnv({
-  /* use stage 3 features + css nesting rules */
-  stage: 3,
-  features: {
-    'nesting-rules': true,
-    autoprefixer: {grid: true}
-  }
-})
+import postcss from 'gulp-postcss';
+import postcssPresetEnv from 'postcss-preset-env';
+import gulp from 'gulp';
+import nested from 'postcss-nested';
 
 
-export default gulp.task('styles', function () {
-    var plugins = [
-        postcssPresetEnv,
+
+
+gulp.task('styles', function () {
+    let plugins = [
+        postcssPresetEnv({  
+          stage: 3
+        }),
+        nested
     ];
     return gulp.src('./app/assets/styles/*.css')
         .pipe(postcss(plugins))
