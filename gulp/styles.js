@@ -1,5 +1,6 @@
-const postcss = require('postcss');
-const postcssPresetEnv = require('postcss-preset-env');
+const postcss = require('gulp-postcss'),
+      postcssPresetEnv = require('postcss-preset-env'),
+      gulp = require('gulp');
 
 postcssPresetEnv({
   /* use stage 3 features + css nesting rules */
@@ -15,14 +16,9 @@ gulp.task('styles', function () {
     var plugins = [
         postcssPresetEnv,
     ];
-    return gulp.src('./src/*.css')
+    return gulp.src('./app/assets/styles/*.css')
         .pipe(postcss(plugins))
-        .pipe(gulp.dest('./dest'));
+        .pipe(gulp.dest('./app/temp'));
 });
 
 
-
-
-postcss([
-  postcssPresetEnv(/* pluginOptions */)
-]).process(YOUR_CSS /*, processOptions */);
