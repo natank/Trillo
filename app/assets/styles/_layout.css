@@ -1,0 +1,68 @@
+body {
+	padding: 5rem 5rem;
+	background-color: var(--Primary);
+}
+
+.lHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--Grey-light-1);
+
+	padding: 1rem;
+}
+
+.lBrief {
+	background-color: var(--Grey-light-1);
+}
+
+.lDetails {
+	background-color: var(--Grey-light-2);
+	display: flex;
+}
+
+.lNav {
+	color: var(--Grey-light-2);
+	background-color: var(--Grey-dark-1);
+}
+
+.lTestimonialItem {
+	background-color: var(--Grey-light-1);
+}
+
+.lInfo {
+	background-color: var(--Grey-light-1);
+}
+
+.lMain {
+
+}
+
+.lContainer {
+	margin: auto;
+
+	&--main {
+		display: flex;	
+	}
+	&--nav {
+
+	}
+}
+.lHotel-Score {
+	width: 10rem;
+	height: 8rem;
+	background-color: red;
+
+}
+
+.lRecommendations {
+	display: flex;
+}
+
+.lClients {
+
+}
+
+.lFooter {
+	background-color: var(--Grey-light-1);
+}
