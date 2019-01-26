@@ -1,16 +1,8 @@
-.demo {
-	padding-left: 7rem;
-	width: 14rem;
-	height: 13rem;
-	background-image: linear-gradient(45deg, red, green);
-	transition: transform .5 ease-out;
-	&__block {
-		width: 10rem;
-		height: 10rem;
-		margin-left: .1rem;
-		margin-top: .3rem;
-		background-color: blue;
-		color: white;
-	}
-
-}
+@import "normalize.css";
+@import "./_layout.css";
+@import "./_typography.css";
+@import "./components/_testimonial-item.css";
+@import "./components/_avatar.css";
+@import "./_utilities.css";
+@import "./abstracts/_variables.css";
+@import "./components/_components.css";

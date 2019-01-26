@@ -1,20 +1,24 @@
+import gulp from 'gulp';
 import postcss from 'gulp-postcss';
 import postcssPresetEnv from 'postcss-preset-env';
-import gulp from 'gulp';
-import nested from 'postcss-nested';
-
-
-
+import postcssImport from 'postcss-import';
+import postcssNested from 'postcss-nested';
 
 gulp.task('styles', function () {
     let plugins = [
+        postcssImport,
         postcssPresetEnv({  
           stage: 3
         }),
-        nested
+        postcssNested
+        
     ];
-    return gulp.src('./app/assets/styles/*.css')
+    return gulp.src('./app/assets/styles/styles.css')
         .pipe(postcss(plugins))
+        .on('error', function(errorInfo){
+            console.log(errorInfo.toString())
+            this.emit('end');
+        })
         .pipe(gulp.dest('./app/temp'));
 });
 
