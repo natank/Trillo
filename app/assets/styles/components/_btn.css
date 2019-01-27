@@ -1,0 +1,6 @@
+.cBtn {
+	&--1 {
+		border-bottom: 1px solid var(--Primary);
+		padding-bottom: .2rem;
+	}
+}

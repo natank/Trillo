@@ -5,6 +5,9 @@
 	&__Container {
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
+		min-width: 30rem;
+
 	}
 }
 
@@ -88,13 +91,17 @@
 	background-color: var(--Primary-light);
 	color: var(--Grey-light-2);
 	font-size: var(--Font-large);
-	font-weight: var(--Font-light);
+	font-weight: var(--Font-lighter);
 	text-align: center;
+	height: 100%;
+	padding: 0 2rem;
 	&__score {
 		display: block;
+		margin-bottom: .2rem;
+		font-weight: var(--Font-lighter);
 	}
 	&__votes {
 		display: block;
-		font-size: var(--Font-small);
+		font-size: var(--Font-smaller);
 	}
 }

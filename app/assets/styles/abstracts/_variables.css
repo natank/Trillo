@@ -12,10 +12,14 @@
 	--Grey-dark-3: #999;
 	
 	/*Font sizes*/
-	--Font-large: 1.5rem;
-	--Font-small: .8rem;
+	--Font-large: 2.5rem;
+	--Font-medium: 1.4rem;
+	--Font-small: 1.2rem;
+	--Font-smaller: 1.0rem;
 
-	/*Font width*/
-	--Font-light: 100;
+	/*Font weight*/
+	--Font-lighter: 100;
+	--Font-light: 400;
+	--Font-bold: 600;
 
 }

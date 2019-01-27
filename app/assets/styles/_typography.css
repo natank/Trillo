@@ -10,16 +10,32 @@ html {
 	color: var(--Grey-dark-2);
 }
 
+.tAddress {
+	font-style: normal;
+	
+}
+
 .tParagraph {
+	font-size: var(--Font-medium);
+	color: var(--Grey-dark-1);
+	font-weight: var(--Font-light);
+	line-height: 2rem;
 	&--bold {
 
 	}
 
 	&--small {
-		font-size: .8rem;
+		font-size: var(--Font-small);
+	}
+
+	&--taller {
+		line-height: 3rem
 	}
 }
 
+.tColumns--2 {
+	column-count:2;
+}
 
 .tVotes {
 	
@@ -30,5 +46,8 @@ html {
 }
 
 .tLink {
-	
+		color: var(--Primary);
+		text-decoration: none;
+		font-size: var(--Font-small);
+		font-weight: var(--Font-bold);
 }

@@ -27,25 +27,26 @@ body {
 
 .lTestimonialItem {
 	background-color: var(--Grey-light-1);
-	padding: 2rem;
+	padding: 1rem 3rem;
 }
 
 .lDetails {
 	background-color: var(--Grey-light-3);
-	padding: 3.2rem;
+	padding: 4rem;
 	display: flex;
 	justify-content: space-between;
 }
 
 .lTestimonials {
-		flex-basis: 35%;
+	flex-basis: 33%;
 }
 
 
 .lInfo {
 	background-color: var(--Grey-light-1);
 	flex-basis: 55%;
-	padding: 2rem;
+	padding: 1rem 3rem;
+
 }
 
 
