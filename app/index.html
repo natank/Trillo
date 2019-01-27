@@ -30,30 +30,37 @@
 			</div> 
 		</header>
 		<div class="lContainer--main">
-			<nav class="lNav">
+			<nav class="cNav lNav">
 				<ul>
-					<li>hotel</li>
-					<li>flight</li>
-					<li>car rental</li>
-					<li>tours</li>
+					<li><a href="#">hotel</a></li>
+					<li><a href="#">flight</a></li>
+					<li><a href="#">car rental</a></li>
+					<li><a href="#">tours</a></li>
 				</ul>
+				<p class="tParagraph tParagraph--small">
+					&copy; 2017 by trillo. All rights reserved.
+				</p>
 			</nav>
 			<main class="lMain">
-				<section class="photos">
-					<img src="#" alt="hotel photo 1">
-					<img src="#" alt="hotel photo 2">
-					<img src="#" alt="hotel photo 3">
+				<section class="lContainer--photos">
+					<img class="cPromo" src="./img/hotel-1.jpg" alt="hotel photo 1">
+					<img class="cPromo" src="./img/hotel-2.jpg" alt="hotel photo 2">
+					<img class="cPromo" src="./img/hotel-3.jpg" alt="hotel photo 3">
 				</section>
-				<section class="lBrief">
-					<h1 class="tTitle">hotel las palmas</h1>
-					<div class="stars">Stars</div>
-					<address class="address">
-						<img src="#" alt="location sign">
-						<a href="#" class="tLink cBtn--1">Albufeira, Portugal</a>
-					</address>
-					<div class="lScore">
-						<span class="tScore--white">8.6</span>
-						<span class="tVotes">4.29votes</span>
+				<section class="cHotelBrief">
+					<div class="cHotelBrief__Container">
+						<h1 class="tTitle lTitle">hotel las palmas</h1>
+						<div class="stars">Stars</div>
+					</div>
+					<div class="cHotelBrief__Container">
+						<address class="address">
+							<img src="#" alt="location sign">
+							<a href="#" class="tLink cBtn--1">Albufeira, Portugal</a>
+						</address>
+						<div class="cScore tScore">
+							<span class="cScore__score">8.6</span>
+							<span class="cScore__votes">4.29votes</span>
+						</div>
 					</div>
 				</section>
 				<section class="lDetails">
@@ -66,7 +73,7 @@
 						</p>
 						<hr class="tHr">
 						
-						<p class = "tParagraph tColumns--2">
+						<p class = "tParagraph lParagraph tColumns--2">
 							<ul class="tFeatures">
 								<li>Close to the beach</li>
 								<li>Free airport shuttle</li>

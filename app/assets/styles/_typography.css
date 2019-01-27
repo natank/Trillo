@@ -1,9 +1,13 @@
 html {
 	font-family: 'Open Sans', sans-serif;
+	font-size: 10px;
 }
 
 .tTitle {
 	text-transform: uppercase;
+	font-weight: 100;
+	font-size: var(--Font-large);
+	color: var(--Grey-dark-2);
 }
 
 .tParagraph {
@@ -12,15 +16,10 @@ html {
 	}
 
 	&--small {
-
+		font-size: .8rem;
 	}
 }
 
-.tScore {
-	@--white {
-
-	}
-}
 
 .tVotes {
 	
