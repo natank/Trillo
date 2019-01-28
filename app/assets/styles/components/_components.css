@@ -100,8 +100,25 @@
 		margin-bottom: .2rem;
 		font-weight: var(--Font-lighter);
 	}
+
 	&__votes {
 		display: block;
 		font-size: var(--Font-smaller);
+	}
+
+	&--testimonials {
+		background: none;
+		color: var(--Primary);
+		padding: 0;
+		font-size: 2rem;
+	}
+}
+
+.cAvatar {
+	display: inline-block;
+	border-radius: 50%;
+	height: 100%;
+	&--small {
+		
 	}
 }

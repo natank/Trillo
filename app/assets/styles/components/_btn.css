@@ -3,4 +3,7 @@
 		border-bottom: 1px solid var(--Primary);
 		padding-bottom: .2rem;
 	}
+	&--2 {
+		display: block;
+	}
 }
