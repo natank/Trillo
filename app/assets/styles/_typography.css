@@ -19,7 +19,8 @@ html {
 	font-size: var(--Font-medium);
 	color: var(--Grey-dark-1);
 	font-weight: var(--Font-light);
-	line-height: 2rem;
+	line-height: var(--Line-medium);
+	margin-bottom: 2rem;
 	&--bold {
 
 	}

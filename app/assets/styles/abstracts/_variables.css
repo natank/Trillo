@@ -12,7 +12,8 @@
 	--Grey-dark-3: #999;
 	
 	/*Font sizes*/
-	--Font-large: 2.5rem;
+	--Font-larger: 2.5rem;
+	--Font-large: 2.2rem;
 	--Font-medium: 1.4rem;
 	--Font-small: 1.2rem;
 	--Font-smaller: 1.0rem;
@@ -21,5 +22,9 @@
 	--Font-lighter: 100;
 	--Font-light: 400;
 	--Font-bold: 600;
+
+	/* Line height */
+	--Line-tall: 3rem;
+	--Line-medium: 2.5rem;
 
 }

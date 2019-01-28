@@ -7,7 +7,6 @@
 		align-items: center;
 		justify-content: space-between;
 		min-width: 30rem;
-
 	}
 }
 
@@ -90,7 +89,7 @@
 	justify-content: center;
 	background-color: var(--Primary-light);
 	color: var(--Grey-light-2);
-	font-size: var(--Font-large);
+	font-size: var(--Font-larger);
 	font-weight: var(--Font-lighter);
 	text-align: center;
 	height: 100%;
@@ -104,13 +103,6 @@
 	&__votes {
 		display: block;
 		font-size: var(--Font-smaller);
-	}
-
-	&--testimonials {
-		background: none;
-		color: var(--Primary);
-		padding: 0;
-		font-size: 2rem;
 	}
 }
 
@@ -129,9 +121,66 @@
 		margin-bottom: 3rem;
 	}
 	color: var(--Grey-dark-1);
-	padding: 2rem;
+	padding: 3rem;
 	&__text {
 		font-size: var(--Font-medium);
 		line-height: 2rem;
+		
+		padding: 0;
+		margin: 0;
+		margin-bottom: 2rem;
 	}
+
+	&__data {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__user {
+		display: flex;
+		align-items: center;
+	}
+	&__photo {
+		border-radius: 50%;
+	}
+	&__user-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-left: 1rem;
+	}
+	&__user-name {
+		text-transform: uppercase;
+		font-size: var(--Font-small);
+		font-weight: var(--Font-bold);
+		margin-bottom: 1rem;
+	}
+	&__date {
+		color: var(--Grey-dark-2);
+	}
+	&__rating {
+		padding: 0;
+		display: table;
+		vertical-align: middle;
+		font-size: var(--Font-large);
+		color: var(--Primary);
+		font-weight: var(--Font-lighter);
+	}
+}
+
+.cFeatures {
+	font-size: var(--Font-medium);
+	color: var(--Grey-dark-1);
+	font-weight: var(--Font-light);
+	line-height: var(--Line-tall);
+	border: 1px solid var(--Grey-light-4);
+	border-right: none;
+	border-left: none;
+	column-count: 2;
+	list-style: none;
+	padding: 2rem 0 ;
+
+	
+
 }
