@@ -119,6 +119,19 @@
 	border-radius: 50%;
 	height: 100%;
 	&--small {
-		
+			
+	}
+}
+
+.cReview {
+	background-color: var(--Grey-light-1);
+	&:not(:last-child) {
+		margin-bottom: 3rem;
+	}
+	color: var(--Grey-dark-1);
+	padding: 2rem;
+	&__text {
+		font-size: var(--Font-medium);
+		line-height: 2rem;
 	}
 }
