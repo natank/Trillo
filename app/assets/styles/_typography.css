@@ -21,6 +21,7 @@ html {
 	font-weight: var(--Font-light);
 	line-height: var(--Line-medium);
 	margin-bottom: 2rem;
+	margin-top: 0;
 	&--bold {
 
 	}
@@ -39,6 +40,10 @@ html {
 
 	&--no-top-margin {
 		margin-top: 0;
+	}
+
+	&--grey-light {
+		color: var(--Grey-light-1);
 	}
 }
 

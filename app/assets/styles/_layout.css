@@ -8,12 +8,38 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	background-color: var(--Grey-light-1);
-	padding: 1rem;
+	padding: 2rem;
+
+	&__right-side {
+		display: flex;
+		align-items: center;
+	}
+	&__photo {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1rem;
+		&:hover {
+			background-color: var(--Grey-light-2);
+		}
+	}
+
+	&__icon {
+		color: var(--Grey-light-2);
+		width: 2rem;
+	}
+
+	&__caption {
+		margin-left: 1rem;
+	}
+
+
 }
 
 .lTitle {
 	margin-left: 2rem;
 }
+
 
 
 
@@ -117,7 +143,5 @@ body {
 
 }
 
-.lFooter {
-	background-color: var(--Grey-light-1);
-}
+
 

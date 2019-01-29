@@ -1,9 +1,18 @@
 .cBtn {
-	&--1 {
 		border-bottom: 1px solid var(--Primary);
 		padding-bottom: .2rem;
-	}
+		transition: all .1s;
+	
 	&--2 {
 		display: block;
+		margin: auto;
+		font-size: var(--Font-medium: 1.4rem);
+		font-weight: var(--Font-light);
+		color: var(--Primary-dark);
+		&:hover {
+			letter-spacing: .05rem;
+			color: var(--Grey-dark-1);
+			border-color: var(--Grey-dark-1);
+		}
 	}
 }

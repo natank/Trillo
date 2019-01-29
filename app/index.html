@@ -13,19 +13,23 @@
 				<img src="./img/logo.png">,	
 			</picture>
 
-			<input class="cSearchBox">
+			<input class="cSearchBox" type="search" name="search" placeholder="Search hotels">
 			
-			<div class="lContainer--nav">
+			<div class="lHeader__right-side">
+				<span class="icon icon--bookmark lHeader__icon"></span>
 				<picture class="cIcon--nav">
-			 		<img src="#" alt = "bookmars icon">
+			 		<img src="#" alt = "bookmark icon">
 			 	</picture>
 			 	<picture class="cIcon--nav" alt = "Comments icon">
 			 		<img src="#">
 			 	</picture>
-			 	<picture class="cAvatar Cavatar--small" alt="Avatar">
-			 		<img src="#">
-			 	</picture>
-			 	<span class="tPharagraph">Jonas</span>
+			 	<figure class=lHeader__photo>
+			 		<img class="cAvatar cAvatar--small" src="img/user.jpg" 
+			 				width="30"  alt="Avatar"
+			 		>
+			 		<figcaption class="tPharagraph lHeader__caption">Jonas</figcaption>
+			 	</figure>
+			 	
 
 			</div> 
 		</header>
@@ -37,7 +41,7 @@
 					<li><a href="#">car rental</a></li>
 					<li><a href="#">tours</a></li>
 				</ul>
-				<p class="tParagraph tParagraph--small">
+				<p class="tParagraph tParagraph--small tParagraph--grey-light">
 					&copy; 2017 by trillo. All rights reserved.
 				</p>
 			</nav>
@@ -55,7 +59,7 @@
 					<div class="cHotelBrief__Container">
 						<address class="tAddress">
 							<img src="#" alt="location sign">
-							<a href="#" class="tLink cBtn--1">Albufeira, Portugal</a>
+							<a href="#" class="tLink cBtn">Albufeira, Portugal</a>
 						</address>
 						<div class="cScore tScore">
 							<span class="cScore__score">8.6</span>
@@ -140,15 +144,23 @@
 							</li>
 							
 						</ul>
-						<a href="#" class="tLink cBtn--2">Show all &rarr;</a>
+						<a href="#" class="tLink cBtn cBtn--2">Show all &rarr;</a>
 					</div>
 				</section>
-				<footer class="lFooter">
-				<h1 class="tTitle tTitle--large">
-					good news! we have 4 free rooms for your selected dates
-				</h1>
-				<a href="#" class="cBtn">book now</a>
-			</footer>
+				<footer class="cFooter">
+					<h1 class="cFooter__text">
+						good news! we have 4 free rooms for your selected dates!
+					</h1>
+					<a href="#" class="cFooter__buttons-box">
+						<span class="cFooter__button book">
+							book now
+						</span>
+						<span class="cFooter__button only">
+							only 4 rooms left
+						</span>
+					</a>
+					
+				</footer>
 			</main>
 
 		</div>

@@ -3,7 +3,9 @@ import gulpSequence from 'gulp-sequence';
 
 gulp.task('build', gulpSequence(
 	'clean',
+	'icons',
 	['html', 'styles'], 
-	'watch', 
-	'browserSync')
+	'browserSync',
+	'watch'
+	)
 )

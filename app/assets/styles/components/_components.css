@@ -58,7 +58,7 @@
 }
 
 .cLogo {
-	width: 3rem;
+	width: 5rem;
 	line-height: 0;
 	& img {
 		max-width: 100%;
@@ -67,7 +67,23 @@
 }
 
 .cSearchBox {
-	border-radius: 1rem;
+	border-radius: 4%/50%;
+	width: 45rem;
+	height: 3.5rem;
+	background-color: var(--Grey-light-2);
+	border: solid 1px var(--Grey-light-2);
+	padding: 1rem;
+	font-size: var(--Font-medium);
+	color: var(--Grey-dark-3);
+	transition: all .1s;
+	&:focus {
+		outline: none;
+		width: 48rem;
+	}
+	&::placeholder {
+		color: var(--Grey-dark-3);
+		font-size: var(--Font-medium);
+	}
 
 }
 
@@ -111,7 +127,7 @@
 	border-radius: 50%;
 	height: 100%;
 	&--small {
-			
+		width: 4rem;
 	}
 }
 
@@ -122,10 +138,10 @@
 	}
 	color: var(--Grey-dark-1);
 	padding: 3rem;
+
 	&__text {
 		font-size: var(--Font-medium);
-		line-height: 2rem;
-		
+		line-height: var(--Line-medium);	
 		padding: 0;
 		margin: 0;
 		margin-bottom: 2rem;
@@ -180,7 +196,71 @@
 	column-count: 2;
 	list-style: none;
 	padding: 2rem 0 ;
-
-	
-
 }
+
+.cFooter {
+	background-color: var(--Grey-light-1);
+	padding: 3rem;
+	text-align: center;
+	&__text {
+		text-transform: uppercase;
+		font-weight: 100;
+		font-size: var(--Font-large);
+		color: var(--Grey-dark-2);
+		text-align: center;
+		margin:0;
+		margin-bottom: 3rem;
+	}
+	&__buttons-box {
+		display: block;
+		position: relative;
+		width: 24rem;
+		padding: 3rem 0rem;
+		background-color: red;
+		margin:auto;
+		overflow: hidden;
+		background: linear-gradient(90deg, var(--Primary), 
+									var(--Primary-dark) 95%);
+		border-radius: 13%/50%;
+		color: var(--Grey-light-1);
+
+		& .book {
+				top: 50%;
+				left: 50%;
+			}
+		& .only {
+			top: -100%;
+			left: 50%;
+		}
+
+		&:hover {
+			background: linear-gradient(-90deg, var(--Primary), 
+									var(--Primary-dark) 95%);
+			& .only {
+				top: 50%;
+				left: 50%;
+			}
+			& .book {
+				top: 200%;
+				left: 50%;
+			}
+
+		}
+	}
+
+	&__button {
+		display: block;
+		position: absolute;
+		width: 100%;
+		/* Center Position */
+		transform: translate(-50%, -50%);	
+			
+		transition: all .2s;
+		text-transform: uppercase;
+		font-size: var(--Font-medium);
+		
+	}
+	
+}
+
+
