@@ -3,6 +3,5 @@ let gulp = require("gulp"),
 
 gulp.task('clean', function(){
 	return del.sync(['app/temp/*.*',
-					 'app/temp/img/*.svg', 
 					 'app/assets/styles/_sprite.css']);
 })

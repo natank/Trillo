@@ -9,25 +9,35 @@
 <body>
 	<div class="lContainer">
 		<header class="lHeader">
-			<picture class="cLogo">
+			<picture class="cLogo lHeader__logo">
 				<img src="./img/logo.png">,	
 			</picture>
 
-			<input class="cSearchBox" type="search" name="search" placeholder="Search hotels">
+			<div class="cSearchBox">
+				
+				<div class="cSearchBox__icon-box">	
+	        <svg class="lHeader__icon cSearchBox__icon">
+	        	<use xlink:href="img/icons.svg#icon-magnifying-glass"></use>
+	        </svg>
+	      </div>
+
+				<input class="cSearchBox__search" type="search" name="search" placeholder="Search hotels">
+
+			</div>
 			
 			<div class="lHeader__right-side">
-				<span class="icon icon--bookmark lHeader__icon"></span>
-				<picture class="cIcon--nav">
-			 		
-			 		<div class="clearfix">
-		                <svg class="icon icon-bookmark">
-		                	<use xlink:href="img/icons.svg#icon-bookmark"></use>
-		                </svg>
-		            </div>
-			 	</picture>
-			 	<picture class="cIcon--nav" alt = "Comments icon">
-			 		<img src="#">
-			 	</picture>
+			 	<div class="lHeader__icon-box">	
+	        <svg class="lHeader__icon icon-bookmark">
+	        	<use xlink:href="img/icons.svg#icon-bookmark"></use>
+	        </svg>
+	        <span class="lHeader__counter">7</span>
+	      </div>
+	      <div class="lHeader__icon-box">	
+	        <svg class="lHeader__icon icon-chat">
+	        	<use xlink:href="img/icons.svg#icon-chat"></use>
+	        </svg>
+	        <span class="lHeader__counter">13</span>
+			 	</div>
 			 	<figure class=lHeader__photo>
 			 		<img class="cAvatar cAvatar--small" src="img/user.jpg" 
 			 				width="30"  alt="Avatar"
