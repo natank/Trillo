@@ -13,17 +13,18 @@
 				<img src="./img/logo.png">,	
 			</picture>
 
-			<div class="cSearchBox">
+			<form class="cSearchBox">
 				
-				<div class="cSearchBox__icon-box">	
+				<input class="cSearchBox__search" type="search" name="search" placeholder="Search hotels">
+				<button type="submit" class="cSearchBox__icon-box">	
 	        <svg class="lHeader__icon cSearchBox__icon">
 	        	<use xlink:href="img/icons.svg#icon-magnifying-glass"></use>
 	        </svg>
-	      </div>
+	      </button>
 
-				<input class="cSearchBox__search" type="search" name="search" placeholder="Search hotels">
+				
 
-			</div>
+			</form>
 			
 			<div class="lHeader__right-side">
 			 	<div class="lHeader__icon-box">	
@@ -51,10 +52,38 @@
 		<div class="lContainer--main">
 			<nav class="cNav lNav">
 				<ul>
-					<li><a href="#">hotel</a></li>
-					<li><a href="#">flight</a></li>
-					<li><a href="#">car rental</a></li>
-					<li><a href="#">tours</a></li>
+					<li><a href="#">
+						
+			        <svg class="cNav__icon">
+			        	<use xlink:href="img/icons.svg#icon-home"></use>
+			        </svg>
+					 	
+					 		<span class="cNav__text">hotel</span>
+
+					</a></li>
+					<li><a href="#">
+
+						<svg class="cNav__icon">
+			        	<use xlink:href="img/icons.svg#icon-aircraft-take-off"></use>
+			      </svg>
+
+						<span class="cNav__text">flight</span>
+					</a></li>
+					<li><a href="#">
+
+						<svg class="cNav__icon">
+			        	<use xlink:href="img/icons.svg#icon-key"></use>
+			      </svg>
+
+						<span class="cNav__text">car rental</span>
+					</a></li>
+					<li><a href="#">
+
+						<svg class="cNav__icon">
+			        	<use xlink:href="img/icons.svg#icon-map"></use>
+			      </svg>
+						<span class="cNav__text">tours</span>
+					</a></li>
 				</ul>
 				<p class="tParagraph tParagraph--small tParagraph--grey-light">
 					&copy; 2017 by trillo. All rights reserved.
@@ -69,11 +98,19 @@
 				<section class="cHotelBrief">
 					<div class="cHotelBrief__Container">
 						<h1 class="tTitle lTitle">hotel las palmas</h1>
-						<div class="stars">Stars</div>
+						<ul class="cHotelBrief__rating">
+
+							<li><svg class="cHotelBrief__icon"><use xlink:href="img/icons.svg#icon-star"></use></svg></li>
+							<li><svg class="cHotelBrief__icon"><use xlink:href="img/icons.svg#icon-star"></use></svg></li>
+							<li><svg class="cHotelBrief__icon"><use xlink:href="img/icons.svg#icon-star"></use></svg></li>
+							<li><svg class="cHotelBrief__icon"><use xlink:href="img/icons.svg#icon-star"></use></svg></li>
+							<li><svg class="cHotelBrief__icon"><use xlink:href="img/icons.svg#icon-star"></use></svg></li>
+
+						</ul>
 					</div>
-					<div class="cHotelBrief__Container">
+					<div class="cHotelBrief__Container cHotelBrief__Container--right">
 						<address class="tAddress">
-							<img src="#" alt="location sign">
+							<svg class="cHotelBrief__icon"><use xlink:href="img/icons.svg#icon-location-pin"></use></svg>
 							<a href="#" class="tLink cBtn">Albufeira, Portugal</a>
 						</address>
 						<div class="cScore tScore">
@@ -92,14 +129,14 @@
 						</p>
 											
 						<ul class = "cFeatures ">
-							<li>Close to the beach</li>
-							<li>Free airport shuttle</li>
-							<li>Air conditioning and heating</li>
-							<li>We speak all languages</li>
-							<li>Breakfast included</li>
-							<li>Free wifi in all rooms</li>
-							<li>Pets allowed</li>
-							<li>Perfect for families</li>
+							<li><svg class="cFeatures__icon"><use xlink:href="img/icons.svg#icon-chevron-thin-right"></use></svg>Close to the beach</li>
+							<li><svg class="cFeatures__icon"><use xlink:href="img/icons.svg#icon-chevron-thin-right"></use></svg>Free airport shuttle</li>
+							<li><svg class="cFeatures__icon"><use xlink:href="img/icons.svg#icon-chevron-thin-right"></use></svg>Air conditioning and heating</li>
+							<li><svg class="cFeatures__icon"><use xlink:href="img/icons.svg#icon-chevron-thin-right"></use></svg>We speak all languages</li>
+							<li><svg class="cFeatures__icon"><use xlink:href="img/icons.svg#icon-chevron-thin-right"></use></svg>Breakfast included</li>
+							<li><svg class="cFeatures__icon"><use xlink:href="img/icons.svg#icon-chevron-thin-right"></use></svg>Free wifi in all rooms</li>
+							<li><svg class="cFeatures__icon"><use xlink:href="img/icons.svg#icon-chevron-thin-right"></use></svg>Pets allowed</li>
+							<li><svg class="cFeatures__icon"><use xlink:href="img/icons.svg#icon-chevron-thin-right"></use></svg>Perfect for families</li>
 						</ul>
 					
 						<div class="lFriends">

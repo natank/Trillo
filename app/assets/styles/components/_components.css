@@ -2,11 +2,26 @@
 	display: flex;
 	justify-content: space-between;
 	background-color: var(--Grey-light-1);
+	
 	&__Container {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		min-width: 30rem;
+		min-width: 22rem;
+		&--right {
+			width: 24rem;
+		}
+	}
+	&__rating {
+		display: flex;
+		list-style: none;
+		margin: 0;
+
+	}
+	&__icon {
+		fill: var(--Primary);
+		width: 1.5rem;
+		height: 1.5rem;
 	}
 }
 
@@ -34,12 +49,25 @@
 	}
 
 	& a {
-	  display: block;
+	  display: flex;
+	  align-items: center;
 	  padding: 1.2rem;
 	  margin-bottom: 0.2em;
 	  text-decoration: none;
 	  color: var(--Grey-light-1);
 	  text-transform: uppercase;
+	  font-size: var(--Font-medium);
+	}
+
+	&__icon {
+		fill: var(--Grey-light-2);
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+
+	&__text {
+		display: inline-block;
+		margin-left: 1rem;
 	}
 	& p {
 		text-align: center;
@@ -48,14 +76,10 @@
 
 	& a:hover {
 	  background-color: var(--Primary-light);
-	}
-}
-
-.cIcon {
-	&--nav {
 
 	}
 }
+
 
 .cLogo {
 	width: 5rem;
@@ -68,14 +92,20 @@
 
 .cSearchBox {
 	position: relative;
-	width: 45rem;
 	height: 3.5rem;
 	&__icon-box {
 		position: absolute;
 		top:50%;	
-		right: 10px;
+		right: 2%;
 		transform: translateY(-50%);
-		
+		border: none;
+		background-color: transparent;
+				
+		&:focus{
+			border: none;
+			
+			outline: none;
+		}
 	}
 
 	&__icon {
@@ -86,7 +116,7 @@
 
 	&__search {
 		border-radius: 4%/50%;
-		width: 100%;
+		width: 45rem;
 		height: 100%;
 		background-color: var(--Grey-light-2);
 		border: solid 1px var(--Grey-light-2);
@@ -215,6 +245,13 @@
 	column-count: 2;
 	list-style: none;
 	padding: 2rem 0 ;
+
+	&__icon {
+		width: var(--Font-small);
+		height: var(--Font-small);
+		fill: var(--Primary);
+		margin-right: 1rem;
+	}
 }
 
 .cFooter {
