@@ -1,0 +1,47 @@
+/* Media queries - use Mobile last system */
+
+@define-mixin atBigDesktop {
+	@media only screen and (min-width: 112.5em) { /* 1800px */
+		@mixin-content
+	}
+}
+
+@define-mixin atTabLands {
+	@media only screen and (max-width: 75em) {  /* 1200px */
+		@mixin-content
+	}
+}
+			  
+@define-mixin atTabPortr {
+	@media only screen and (max-width: 56.25em) { /* 900px */
+		@mixin-content
+	}
+}
+
+
+/* Media query used to Disable flip on mobile devices */
+@define-mixin atNonHoverDevice {
+	@media only screen and (hover: none) {
+		@mixin-content
+	}
+  
+
+}
+
+@define-mixin atPhone {
+	@media only screen and (max-width: 37.5em) { /* 600px */
+		@mixin-content;
+	}
+}
+
+
+
+/* Clearfix */ 
+@define-mixin clearfix {
+	&::after
+	{
+		display:table;
+		content:"";
+		clear:both;
+	}
+}

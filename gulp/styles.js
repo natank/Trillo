@@ -3,6 +3,7 @@ import postcss from 'gulp-postcss';
 import postcssPresetEnv from 'postcss-preset-env';
 import postcssImport from 'postcss-import';
 import postcssNested from 'postcss-nested';
+import postcssMixins from 'postcss-mixins';
 
 gulp.task('styles', function () {
     let plugins = [
@@ -10,6 +11,7 @@ gulp.task('styles', function () {
         postcssPresetEnv({  
           stage: 3
         }),
+        postcssMixins,
         postcssNested
         
     ];

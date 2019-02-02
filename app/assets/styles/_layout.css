@@ -4,14 +4,23 @@
 body {
 	padding: 8rem 8rem;
 	background-color: var(--Primary);
+	@mixin atTabLands {
+		padding: 0;
+	}
 }
 
 .lHeader {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	position: relative;
 	background-color: var(--Grey-light-1);
-
+	@mixin atPhone {
+		padding-top: 2rem;
+		padding-bottom: 1rem;
+		align-items: flex-start;
+		height: 12rem;
+	}
 	&__logo {
 		margin-left: 2rem;
 	}
@@ -96,6 +105,7 @@ body {
 .lNav {
 	flex-basis: 18%;
 }
+
  
 .lTestimonialItem {
 	background-color: var(--Grey-light-1);
@@ -115,10 +125,17 @@ body {
 	display: flex;
 	justify-content: space-between;
 
+	@mixin atPhone {
+		flex-direction: column;
+	}
+
 	&__column-right {
 		flex-basis: 35%;
 		display: flex;
 		flex-direction: column;
+		@mixin atPhone {
+			align-items: center;
+		}
 	}
 
 	&__column-left {
@@ -133,11 +150,13 @@ body {
 	padding: 0;
 	margin: 0;
 	margin-bottom: 2rem;
+	@mixin atPhone {
+		display: flex;
+		flex-direction: column;
+		margin-top: 2rem;
+		width: 70%;
+	}
 }
-
-
-
-
 
 .lContainer {
 	&--flex {
@@ -146,6 +165,9 @@ body {
 	}
 	&--main {
 		display: flex;	
+		@mixin atTabPortr {
+			flex-direction:  column;
+		}
 	}
 	
 	&--photos {

@@ -1,4 +1,5 @@
 @import "normalize.css";
+@import "./abstracts/_mixins.css";
 @import "./_layout.css";
 @import "./_typography.css";
 @import "./components/_testimonial-item.css";
